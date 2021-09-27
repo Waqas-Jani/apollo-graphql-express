@@ -1,0 +1,23 @@
+# Extension files to ignore
+.no
+
+# Prefix files names to ignore
+dev.*
+
+# Files to ignore
+package-lock.json
+explain_drag_n_drop.md
+utils/timer.js
+
+# Folders to ignore
+.vscode/
+node_modules/
+dev_resources/
+inf/
+view_templates/
+public/
+seeders/
+config/config.json
+.github/
+__test__/
+utils/docs/
