@@ -8,7 +8,9 @@ const authDefs = gql`
     role: String!
   }
   type Permission {
+    _id: ID!
     name: String
+    permissions: String
   }
   type User {
     _id: ID!

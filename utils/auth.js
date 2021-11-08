@@ -46,13 +46,9 @@ async function getUsers(args, contaxt) {
     throw new Error('Unauthorized!');
   }
   try {
-    const users = await User.find({}, { password: 0, __typename: 0 }).populate(
+    const users = await User.find({}, 'name email').populate(
       'role',
-      {
-        _id: 0,
-        name: 1,
-        __typename: 0,
-      }
+      'name permissions'
     );
     return users;
   } catch (err) {
